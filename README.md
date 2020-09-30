@@ -16,5 +16,5 @@ Data from 2012 to 2019 have been quality checked and are available in Vannmiljø
  
  * **[Station map](https://nivanorge.github.io/tiltaksovervakingen/pages/stn_map.html)**. An interactive map showing station locations
  
- * **[Distribution plots](https://nivanorge.github.io/tiltaksovervakingen/pages/distribution_plots.html)**. Exploring the **overall** data distribution for each parameter, by comparing 
+ * **[Distribution plots](https://nivanorge.github.io/tiltaksovervakingen/pages/distribution_plots.html)**. Exploring the **overall** data distribution for each parameter, by comparing the "new" dataset with the historic data from 
  
