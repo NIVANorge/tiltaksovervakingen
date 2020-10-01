@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import warnings
+from sklearn.ensemble import IsolationForest
 
 
 def get_par_unit_mappings():
@@ -44,24 +45,31 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB AS"):
         file_path,
         sheet_name=sheet_name,
         skiprows=1,
-        usecols="C,G,I:AB",
+        usecols="C,F,G,I:AB",
         header=None,
     )
 
     # Parse header
     header = df[:2]
     df = df[2:]
-    first = header.loc[1].tolist()[:2]
-    pars = header.loc[0].tolist()[2:]
-    units = header.loc[1].tolist()[2:]
+    first = header.loc[1].tolist()[:3]
+    pars = header.loc[0].tolist()[3:]
+    units = header.loc[1].tolist()[3:]
     pars_units = [f"{par}_{unit}" for par, unit in zip(pars, units)]
     df.columns = first + pars_units
 
     df.rename(
-        {"Lokalitets-ID": "vannmiljo_code", "Prøvedato": "sample_date"},
+        {
+            "Lokalitets-ID": "vannmiljo_code",
+            "Prøvedato": "sample_date",
+            "Dybde": "depth1",
+        },
         inplace=True,
         axis="columns",
     )
+
+    # Assume no mixed/integrated samples
+    df["depth2"] = df["depth1"]
 
     # Parse dates
     df["sample_date"] = pd.to_datetime(df["sample_date"], format="%d.%m.%Y")
@@ -71,17 +79,19 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB AS"):
         f"{par}_{unit}"
         for par, unit in zip(par_df["vestfold_lab_name"], par_df["vestfold_lab_unit"])
     ]
-    df = df[["vannmiljo_code", "sample_date"] + cols]
+    df = df[["vannmiljo_code", "sample_date", "depth1", "depth2"] + cols]
 
     # Melt to long format
-    df = pd.melt(df, id_vars=["vannmiljo_code", "sample_date"], var_name="par_unit")
+    df = pd.melt(
+        df,
+        id_vars=["vannmiljo_code", "sample_date", "depth1", "depth2"],
+        var_name="par_unit",
+    )
     df.dropna(subset=["value"], inplace=True)
     df["value"] = pd.to_numeric(df["value"])
 
     df["lab"] = lab
-    df["depth1"] = np.nan
-    df["depth2"] = np.nan
-    df["flag"] = np.nan
+    df["flag"] = ""
 
     # Convert to VM par names and units
     par_df["par_unit"] = par_df["vestfold_lab_name"] + "_" + par_df["vestfold_lab_unit"]
@@ -96,7 +106,10 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB AS"):
 
     df["value"] = df["value"] * df["vl_to_vm_conv_fac"]
 
-    # Tidy up
+    # Assume depth is 0 unless otherwise stated
+    df["depth1"].fillna(0, inplace=True)
+    df["depth2"].fillna(0, inplace=True)
+
     df = df[
         [
             "vannmiljo_code",
@@ -111,6 +124,21 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB AS"):
     ]
 
     df.rename({"vm_par_unit": "par_unit"}, inplace=True, axis="columns")
+
+    assert pd.isna(df).sum().sum() == 0, "Dataframe contains missing values."
+
+    df = df.astype(
+        {
+            "vannmiljo_code": "str",
+            "sample_date": "datetime64",
+            "lab": "str",
+            "depth1": "float",
+            "depth2": "float",
+            "par_unit": "str",
+            "flag": "str",
+            "value": "float",
+        }
+    )
 
     return df
 
@@ -178,6 +206,11 @@ def read_historic_data(file_path):
             df["sample_date"], format="%Y-%m-%d %H:%M:%S"
         )
 
+        # Tidy
+        df["depth1"].fillna(0, inplace=True)
+        df["depth2"].fillna(0, inplace=True)
+        df["flag"].fillna("", inplace=True)
+
         # Cols of interest
         df = df[
             [
@@ -191,6 +224,21 @@ def read_historic_data(file_path):
                 "value",
             ]
         ]
+
+        assert pd.isna(df).sum().sum() == 0, "Dataframe contains missing values."
+
+        df = df.astype(
+            {
+                "vannmiljo_code": "str",
+                "sample_date": "datetime64",
+                "lab": "str",
+                "depth1": "float",
+                "depth2": "float",
+                "par_unit": "str",
+                "flag": "str",
+                "value": "float",
+            }
+        )
 
     return df
 
@@ -258,5 +306,27 @@ def check_data_ranges(df):
         if len(drop_df) > 0:
             print(f"    Dropping rows for {par}.")
             df.drop(drop_df.index, axis="rows", inplace=True)
+
+    return df
+
+
+def isolation_forest(df, par_cols, contamination=0.01, random_state=42):
+    """Apply sklearn's Isolation Forest algorithm.
+
+    Args:
+        df:            Dataframe. Samples to be classified
+        par_cols:      List of str. Numeric columns to use for outlier detection
+        contamination: Float. Proportion of total samples expected to be 'outliers'
+        random_state:  Int. Initialisation state for random forest (for repeatability)
+
+    Returns:
+        Copy of df with new column names 'outlier' added.
+    """
+    assert pd.isna(df).sum().sum() == 0, "Dataframe cannot contain missing values."
+
+    # Run Iso Forest
+    iso = IsolationForest(contamination=contamination, random_state=random_state)
+    df["pred"] = iso.fit_predict(df[par_cols])
+    df["pred"].replace({1: "inlier", -1: "outlier"}, inplace=True)
 
     return df
