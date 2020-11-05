@@ -14,7 +14,7 @@ The first "new" dataset to be considered is the 2020 dataset from VestfoldLAB.
 
 ## Quality checks performed
 
-A table summarising the quality assurance checks implemented can be found [here](https://nivanorge.github.io/tiltaksovervakingen/tables/list_quality_checks.md).
+A table summarising the quality assurance checks implemented can be found [here](https://nivanorge.github.io/tiltaksovervakingen/pages/list_quality_checks.md).
 
 ## Workflow and results
 
@@ -28,4 +28,4 @@ A table summarising the quality assurance checks implemented can be found [here]
  
 ## Issues identified
 
-Tables summarising the issues identifed so far (and possible resolutions, if known) are [here](https://nivanorge.github.io/tiltaksovervakingen/tables/issues_identified.md).
+Tables summarising the issues identifed so far (and possible resolutions, if known) are [here](https://nivanorge.github.io/tiltaksovervakingen/pages/issues_identified.md).
