@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import warnings
+import sqlite3
 from sklearn.ensemble import IsolationForest
 
 
@@ -308,6 +309,50 @@ def check_data_ranges(df):
             df.drop(drop_df.index, axis="rows", inplace=True)
 
     return df
+
+
+def read_data_from_sqlite():
+    """Convenience function for reading all water chemistry data (historic and new)
+        from the database.
+
+    Returns:
+        Tuple of dataframes (stn_df, wc_df)
+    """
+    # Connect to database
+    dbname = "kalk_data.db"
+    eng = sqlite3.connect(dbname, detect_types=sqlite3.PARSE_DECLTYPES)
+
+    # Read tables
+    stn_df = pd.read_sql("SELECT * FROM stations", eng)
+    par_df = pd.read_sql("SELECT * FROM parameters_units", eng)
+    wc_df = pd.read_sql("SELECT * FROM water_chemistry", eng)
+    wc_df["sample_date"] = pd.to_datetime(
+        wc_df["sample_date"], format="%Y-%m-%d %H:%M:%S"
+    )
+
+    # Combine pars and units into one column
+    wc_df["par_unit"] = wc_df["parameter"] + "_" + wc_df["unit"]
+    wc_df.drop(["parameter", "flag", "unit"], axis="columns", inplace=True)
+
+    # Convert to wide format
+    df = wc_df.set_index(
+        [
+            "vannmiljo_code",
+            "sample_date",
+            "lab",
+            "period",
+            "depth1",
+            "depth2",
+            "par_unit",
+        ]
+    ).unstack("par_unit")
+
+    # Tidy
+    df.columns = df.columns.get_level_values(1)
+    df.reset_index(inplace=True)
+    df.columns.name = ""
+
+    return (stn_df, df)
 
 
 def isolation_forest(df, par_cols, contamination=0.01, random_state=42):

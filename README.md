@@ -12,6 +12,10 @@ Data from 2012 to 2019 have been quality checked and are available in Vannmiljø
 
 The first "new" dataset to be considered is the 2020 dataset from VestfoldLAB.
 
+## Quality checks performed
+
+A table summarising the quality assurance checks implemented can be found [here](https://nivanorge.github.io/tiltaksovervakingen/tables/list_quality_checks.md).
+
 ## Workflow and results
 
  * **[Initial exploration and data cleaning](https://nbviewer.jupyter.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/01_data_processing.ipynb)**. An initial exploration of the data, aiming to create a tidy dataset for further analysis
@@ -22,3 +26,6 @@ The first "new" dataset to be considered is the 2020 dataset from VestfoldLAB.
  
  * **[Outlier detection at water sample level](https://nbviewer.jupyter.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/03_outlier_detection.ipynb)**. Using the **[Isolation Forest](https://scikit-learn.org/stable/modules/outlier_detection.html#isolation-forest)** algorithm to detect unusual water samples based on multivariate parameter data. *Work in progress...*
  
+## Issues identified
+
+Tables summarising the issues identifed so far (and possible resolutions, if known) are [here](https://nivanorge.github.io/tiltaksovervakingen/tables/issues_identified.md).
