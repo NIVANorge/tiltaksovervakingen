@@ -11,7 +11,7 @@
 
 ## 2. Issues with the historic (Vannmiljø) dataset
 
-**Note:** This project focuses primarily on quality assessing the new data; a comprehensive review of the data in Vannmiljø is therefore beyond scope. Nevertheless, the following issues with the Vannmiljø dataset have been identified.
+**Note:** This project focuses primarily on quality assessing the new data, and a comprehensive review of the data in Vannmiljø is therefore beyond scope. Nevertheless, the following issues with the Vannmiljø dataset have been identified.
 
 | ID |                                                    Issue                                                    | Resolved |                            Comment                            |
 |:--:|:-----------------------------------------------------------------------------------------------------------:|:--------:|:-------------------------------------------------------------:|
