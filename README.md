@@ -26,7 +26,7 @@ A table summarising the quality assurance checks implemented can be found [here]
  
  4. **[Outlier detection at water sample level](https://nbviewer.jupyter.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/03_outlier_detection.ipynb)**. Using the **[Isolation Forest](https://scikit-learn.org/stable/modules/outlier_detection.html#isolation-forest)** algorithm to detect unusual water samples based on multivariate parameter data. *Work in progress...*
  
- 5. **[Exploring time series](https://nbviewer.jupyter.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/04_timeseries.ipynb)**. Checking the sampling frequency is as expected and looking for spikes and step-changes in the time series for individual stations. Interactive plots [here](https://nivanorge.github.io/tiltaksovervakingen/pages/timeseries_plots.html)
+ 5. **[Exploring time series](https://nbviewer.jupyter.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/04_timeseries.ipynb)**. Checking the sampling frequency is as expected and looking for spikes and step-changes in the time series for individual stations. Interactive plots **[here](https://nivanorge.github.io/tiltaksovervakingen/pages/timeseries_plots.html)**
  
 ## Issues identified
 
