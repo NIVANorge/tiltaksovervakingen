@@ -55,3 +55,4 @@
 | 9  | Possible outliers: values of P-TOT > 100 µg/l P reported by   VestfoldLAB in 2020  | 0        |                                                                                         |
 | 10 | Possible outlier samples in VestfoldLAB dataset                                    | 0        |                                                                                         |
 | 11 | Possible issues with sampling frequency in VestfoldLAB dataset                     | 0        |                                                                                         |
+| 12 | Outliers in time series in VestfoldLAB dataset                                     | 0        |                                                                                         |
