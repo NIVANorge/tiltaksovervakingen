@@ -28,6 +28,8 @@ A table summarising the quality assurance checks implemented can be found [here]
  
  5. **[Exploring time series](https://nbviewer.jupyter.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/04_timeseries.ipynb)**. Checking the sampling frequency is as expected and looking for spikes and step-changes in the time series for individual stations. Interactive plots **[here](https://nivanorge.github.io/tiltaksovervakingen/pages/timeseries_plots.html)**
  
+ 6. **[Exploring unusual results for aluminium](https://nbviewer.jupyter.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/05_explore_al_fracs.ipynb)**. Investigating values for RAl, ILAl and LAl in 2019 and 2020
+ 
 ## Issues identified
 
 Tables summarising the issues identifed so far (and possible resolutions, if known) are [here](https://nivanorge.github.io/tiltaksovervakingen/pages/issues_identified.html).
