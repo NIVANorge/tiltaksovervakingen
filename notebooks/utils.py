@@ -1,7 +1,8 @@
-import pandas as pd
-import numpy as np
-import warnings
 import sqlite3
+import warnings
+
+import numpy as np
+import pandas as pd
 from sklearn.ensemble import IsolationForest
 
 
@@ -16,7 +17,7 @@ def get_par_unit_mappings():
         Dataframe.
     """
     df = pd.read_excel(
-        r"../data/parameter_unit_mapping.xlsx",
+        r"../../data/parameter_unit_mapping.xlsx",
         sheet_name="vestfoldlab_to_vannmiljo",
         keep_default_na=False,
     )
@@ -24,21 +25,26 @@ def get_par_unit_mappings():
     return df
 
 
-def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB AS"):
+def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
     """Read lab data from the agreed template. An example of the template is here:
 
-            ../data/vestfold_lab_data_to_2020-08-31.xls
+            ../../data/vestfold_lab_data_to_2020-08-31.xls
 
         Also converts units and parameter names to match those in Vannmiljø.
 
     Args:
         file_path:  Raw str. Path to Excel template
         sheet_name: Str. Name of sheet to read
-        lab:        Str. Name of lab
+        lab:        Str. Name of lab. One of ['VestfoldLAB', 'Eurofins']
 
     Returns:
         Dataframe.
     """
+    assert lab in [
+        "VestfoldLAB",
+        "Eurofins",
+    ], "'lab' must be one of ['VestfoldLAB', 'Eurofins']."
+
     # Read data
     par_df = get_par_unit_mappings()
 
@@ -78,7 +84,7 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB AS"):
     # Get pars of interest
     cols = [
         f"{par}_{unit}"
-        for par, unit in zip(par_df["vestfold_lab_name"], par_df["vestfold_lab_unit"])
+        for par, unit in zip(par_df[f"{lab.lower()}_name"], par_df[f"{lab.lower()}_unit"])
     ]
     df = df[["vannmiljo_code", "sample_date", "depth1", "depth2"] + cols]
 
@@ -89,23 +95,22 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB AS"):
         var_name="par_unit",
     )
     df.dropna(subset=["value"], inplace=True)
-    df["value"] = pd.to_numeric(df["value"])
-
+    df["flag"] = np.where(df["value"].astype(str).str.contains("<"), "<", np.nan)
+    df["value"] = pd.to_numeric(df["value"].astype(str).str.strip("<"))
     df["lab"] = lab
-    df["flag"] = ""
 
     # Convert to VM par names and units
-    par_df["par_unit"] = par_df["vestfold_lab_name"] + "_" + par_df["vestfold_lab_unit"]
+    par_df["par_unit"] = par_df[f"{lab.lower()}_name"] + "_" + par_df[f"{lab.lower()}_unit"]
     par_df["vm_par_unit"] = par_df["vannmiljo_id"] + "_" + par_df["vannmiljo_unit"]
 
     df = pd.merge(
         df,
-        par_df[["par_unit", "vm_par_unit", "vl_to_vm_conv_fac"]],
+        par_df[["par_unit", "vm_par_unit", f"{lab.lower()}_to_vm_conv_fac"]],
         how="left",
         on="par_unit",
     )
 
-    df["value"] = df["value"] * df["vl_to_vm_conv_fac"]
+    df["value"] = df["value"] * df[f"{lab.lower()}_to_vm_conv_fac"]
 
     # Assume depth is 0 unless otherwise stated
     df["depth1"].fillna(0, inplace=True)
