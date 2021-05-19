@@ -45,6 +45,9 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
         "Eurofins",
     ], "'lab' must be one of ['VestfoldLAB', 'Eurofins']."
 
+    # Read reference station details
+    stn_df = pd.read_excel(r"../../data/active_stations_2020.xlsx", sheet_name="data")
+
     # Read data
     par_df = get_par_unit_mappings()
 
@@ -52,28 +55,49 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
         file_path,
         sheet_name=sheet_name,
         skiprows=1,
-        usecols="C,F,G,I:AB",
+        usecols="C,D,F,G,I:AB",
         header=None,
     )
 
     # Parse header
     header = df[:2]
     df = df[2:]
-    first = header.loc[1].tolist()[:3]
-    pars = header.loc[0].tolist()[3:]
-    units = header.loc[1].tolist()[3:]
+    first = header.loc[1].tolist()[:4]
+    pars = header.loc[0].tolist()[4:]
+    units = header.loc[1].tolist()[4:]
     pars_units = [f"{par}_{unit}" for par, unit in zip(pars, units)]
     df.columns = first + pars_units
 
     df.rename(
         {
             "Lokalitets-ID": "vannmiljo_code",
+            "Prøvested": "station_name",
             "Prøvedato": "sample_date",
             "Dybde": "depth1",
         },
         inplace=True,
         axis="columns",
     )
+
+    # Check station ID have consistent names
+    print("\nThe following location IDs have inconsistent names within this template:")
+    site_ids = df["vannmiljo_code"].unique()
+    for site_id in site_ids:
+        true_name = stn_df.query("vannmiljo_code == @site_id")["station_name"].values
+        names = df.query("vannmiljo_code == @site_id")["station_name"].unique()
+
+        if len(names) > 1:
+            print("    ", f"{site_id} {true_name}", "  ==>  ", names)
+
+    # Check station names have consistent IDs
+    print("\nThe following location names have multiple IDs within this template:")
+    site_names = df["station_name"].unique()
+    for site_name in site_names:
+        true_id = stn_df.query("station_name == @site_name")["vannmiljo_code"].values
+        ids = df.query("station_name == @site_name")["vannmiljo_code"].unique()
+
+        if len(ids) > 1:
+            print("    ", f"{site_name} {true_id}", "  ==>  ", ids)
 
     # Assume no mixed/integrated samples
     df["depth2"] = df["depth1"]
@@ -84,7 +108,9 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
     # Get pars of interest
     cols = [
         f"{par}_{unit}"
-        for par, unit in zip(par_df[f"{lab.lower()}_name"], par_df[f"{lab.lower()}_unit"])
+        for par, unit in zip(
+            par_df[f"{lab.lower()}_name"], par_df[f"{lab.lower()}_unit"]
+        )
     ]
     df = df[["vannmiljo_code", "sample_date", "depth1", "depth2"] + cols]
 
@@ -100,7 +126,9 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
     df["lab"] = lab
 
     # Convert to VM par names and units
-    par_df["par_unit"] = par_df[f"{lab.lower()}_name"] + "_" + par_df[f"{lab.lower()}_unit"]
+    par_df["par_unit"] = (
+        par_df[f"{lab.lower()}_name"] + "_" + par_df[f"{lab.lower()}_unit"]
+    )
     par_df["vm_par_unit"] = par_df["vannmiljo_id"] + "_" + par_df["vannmiljo_unit"]
 
     df = pd.merge(
