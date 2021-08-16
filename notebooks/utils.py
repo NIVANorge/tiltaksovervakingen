@@ -192,7 +192,8 @@ def read_historic_data(file_path):
         df = pd.read_excel(
             file_path,
             sheet_name="VannmiljoEksport",
-            usecols="A:I,Q:U,W",
+            #usecols="A:I,Q:U,W", # For use with Vannmiljø files exported before July 2021
+            usecols="A:J,R:W,Y", # Compatible with new Vannmiljø layout (August 2021 onwards)
             keep_default_na=False,
         )
 
