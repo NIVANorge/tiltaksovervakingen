@@ -105,6 +105,12 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
     # Parse dates
     df["sample_date"] = pd.to_datetime(df["sample_date"], format="%d.%m.%Y")
 
+    # Check all samples come from the same year quarter
+    quarters = df["sample_date"].dt.quarter
+    assert (
+        len(quarters.unique()) == 1
+    ), "File contains samples from several year quarters."
+
     # Get pars of interest
     cols = [
         f"{par}_{unit}"
@@ -192,8 +198,8 @@ def read_historic_data(file_path):
         df = pd.read_excel(
             file_path,
             sheet_name="VannmiljoEksport",
-            #usecols="A:I,Q:U,W", # For use with Vannmiljø files exported before July 2021
-            usecols="A:J,R:W,Y", # Compatible with new Vannmiljø layout (August 2021 onwards)
+            # usecols="A:I,Q:U,W", # For use with Vannmiljø files exported before July 2021
+            usecols="A:J,R:W,Y",  # Compatible with new Vannmiljø layout (August 2021 onwards)
             keep_default_na=False,
         )
 
