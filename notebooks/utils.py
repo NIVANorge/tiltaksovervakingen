@@ -120,6 +120,28 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
     ]
     df = df[["vannmiljo_code", "sample_date", "depth1", "depth2"] + cols]
 
+    # Check nitrate < TOTN
+    mask_df = df[
+        [
+            "vannmiljo_code",
+            "sample_date",
+            "depth1",
+            "depth2",
+            "NO3_µg/l",
+            "Tot-N_µg/l",
+        ]
+    ].copy()
+
+    for col in ["NO3_µg/l", "Tot-N_µg/l"]:
+        mask_df[col].fillna(0, inplace=True)
+        mask_df[col] = pd.to_numeric(mask_df[col].astype(str).str.strip("<"))
+    mask = mask_df["NO3_µg/l"] > mask_df["Tot-N_µg/l"]
+    mask_df = mask_df[mask]
+
+    if len(mask_df) > 0:
+        print("\nThe following samples have nitrate greater than total nitrogen:")
+        print(mask_df)
+
     # Melt to long format
     df = pd.melt(
         df,
