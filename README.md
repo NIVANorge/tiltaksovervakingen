@@ -14,9 +14,11 @@ Data from 2012 to 2019 have been previously quality checked and are available in
 
 An interactive map showing station locations is [here](https://nivanorge.github.io/tiltaksovervakingen/pages/stn_map.html).
 
-The first "new" dataset to be considered is the 2020 dataset from VestfoldLAB.
-
 ## Quarterly quality checking
+
+Each quarter, the lab submits data for assessment. The initial dataset is labelled "v1". Various tests are performed to identify data issues and the feedback provided to the lab. Following reanalysis, a second dataset may be provided ("v2"). When available, this is checked again to ensure problems highlighted in v1 have been fixed.
+
+**Note:** In many cases, reanalysis by the lab will confirm the original extreme values. In such cases, many of the outliers will still be present in v2 of the dataset. The aim of this workflow is to highlight outliers and possible bad data, but it is up to the lab (not NIVA) to decide which data are ultimately submitted to Vannmiljø. 
 
 ### Eurofins 2020 Q4 (v1)
 
@@ -89,7 +91,6 @@ The first "new" dataset to be considered is the 2020 dataset from VestfoldLAB.
  * [Table of time series outliers](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2021_q4_v1/timerseries_outliers.csv)
  * Water sample level outliers ([table](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2021_q4_v1/isoforest_ca_ph.csv) and [plot](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2021_q4_v1/isoforest_ca_ph_plot.png))
  * [Distributions for aluminium](https://raw.githubusercontent.com/NIVANorge/tiltaksovervakingen/master/output/eurofins_2021_q4_v1/al_fracs_displots_by_period.png) 
-
 
 ## Workflow details
 
