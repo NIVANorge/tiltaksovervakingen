@@ -1,0 +1,25 @@
+sample_date,vannmiljo_code,lab,period,depth1,depth2,par,value,outlier
+2021-06-08,020-79149,Eurofins,new,0.0,0.0,CA_mg/l,5.9,1
+2021-05-06,021-28450,Eurofins,new,0.0,0.0,CA_mg/l,7.7,1
+2021-06-16,024-58895,Eurofins,new,0.0,0.0,CA_mg/l,1.6,1
+2021-06-16,024-58895,Eurofins,new,0.0,0.0,P-TOT_µg/l P,32.0,1
+2021-05-11,026-58858,Eurofins,new,0.0,0.0,LAL_µg/l Al,33.0,1
+2021-06-08,026-58858,Eurofins,new,0.0,0.0,LAL_µg/l Al,64.0,1
+2021-05-04,026-58859,Eurofins,new,0.0,0.0,CA_mg/l,1.6,1
+2021-05-26,026-58859,Eurofins,new,0.0,0.0,CA_mg/l,1.6,1
+2021-05-11,030-58838,Eurofins,new,0.0,0.0,TOC_mg/l C,7.3,1
+2021-06-08,032-58839,Eurofins,new,0.0,0.0,ALK_mmol/l,0.012,1
+2021-04-07,032-59587,Eurofins,new,0.0,0.0,ALK_mmol/l,0.01,1
+2021-05-04,032-59587,Eurofins,new,0.0,0.0,ALK_mmol/l,0.01,1
+2021-06-08,032-59587,Eurofins,new,0.0,0.0,ALK_mmol/l,0.01,1
+2021-06-08,036-58863,Eurofins,new,0.0,0.0,ALK_mmol/l,0.023,1
+2021-06-15,045-58817,Eurofins,new,0.0,0.0,P-TOT_µg/l P,13.0,1
+2021-05-04,061-58800,Eurofins,new,0.0,0.0,CA_mg/l,3.0,1
+2021-05-20,061-58800,Eurofins,new,0.0,0.0,CA_mg/l,4.3,1
+2021-05-19,067-79150,Eurofins,new,0.0,0.0,CA_mg/l,1.3,1
+2021-05-04,079-58878,Eurofins,new,0.0,0.0,LAL_µg/l Al,185.0,1
+2021-05-11,079-58883,Eurofins,new,0.0,0.0,LAL_µg/l Al,92.0,1
+2021-04-07,082-50557,Eurofins,new,0.0,0.0,CA_mg/l,3.7,1
+2021-05-04,082-50557,Eurofins,new,0.0,0.0,CA_mg/l,3.0,1
+2021-05-19,082-50557,Eurofins,new,0.0,0.0,CA_mg/l,2.5,1
+2021-06-08,082-50557,Eurofins,new,0.0,0.0,CA_mg/l,3.4,1

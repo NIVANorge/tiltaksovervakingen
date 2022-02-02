@@ -1,0 +1,8 @@
+vannmiljo_code,sample_date,lab,period,depth1,depth2,CA_mg/l,PH_<ubenevnt>,pred
+038-58866,2020-12-08 12:50:42,Eurofins,new,0.0,0.0,3.9,8.0,outlier
+079-58878,2020-10-06 07:20:52,Eurofins,new,0.0,0.0,7.9,6.2,outlier
+079-58878,2020-10-20 07:20:07,Eurofins,new,0.0,0.0,7.3,6.1,outlier
+082-58870,2020-09-22 07:15:20,Eurofins,new,0.0,0.0,11.0,7.8,outlier
+082-58870,2020-11-17 07:15:21,Eurofins,new,0.0,0.0,3.1,7.8,outlier
+082-58870,2020-12-22 07:10:17,Eurofins,new,0.0,0.0,9.7,7.5,outlier
+082-58873,2020-12-22 07:10:17,Eurofins,new,0.0,0.0,22.0,7.7,outlier

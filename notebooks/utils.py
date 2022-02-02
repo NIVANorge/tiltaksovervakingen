@@ -1,3 +1,4 @@
+import os
 import sqlite3
 import warnings
 
@@ -34,8 +35,8 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
 
     Args:
         file_path:  Raw str. Path to Excel template
-        sheet_name: Str. Name of sheet to read
-        lab:        Str. Name of lab. One of ['VestfoldLAB', 'Eurofins']
+        sheet_name:     Str. Name of sheet to read
+        lab:             Str. Name of lab. One of ['VestfoldLAB', 'Eurofins']
 
     Returns:
         Dataframe.
@@ -107,9 +108,8 @@ def read_data_template(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
 
     # Check all samples come from the same year quarter
     quarters = df["sample_date"].dt.quarter
-    assert (
-        len(quarters.unique()) == 1
-    ), "File contains samples from several year quarters."
+    if len(quarters.unique()) > 1:
+        print("\nWARNING: File contains samples from several year quarters.")
 
     # Get pars of interest
     cols = [
@@ -373,16 +373,23 @@ def check_data_ranges(df):
     return df
 
 
-def read_data_from_sqlite():
+def read_data_from_sqlite(lab, year, qtr, version):
     """Convenience function for reading all water chemistry data (historic and new)
         from the database.
+
+    Args:
+        lab:     Str. Name of lab
+        year:    Int. Year of interest
+        qtr:     Int. In range [1, 4]. Quarter to read
+        version: Int. Version of file to read
 
     Returns:
         Tuple of dataframes (stn_df, wc_df)
     """
     # Connect to database
-    dbname = "kalk_data.db"
-    eng = sqlite3.connect(dbname, detect_types=sqlite3.PARSE_DECLTYPES)
+    fold_path = f"../../output/{lab.lower()}_{year}_q{qtr}_v{version}"
+    db_path = os.path.join(fold_path, "kalk_data.db")
+    eng = sqlite3.connect(db_path, detect_types=sqlite3.PARSE_DECLTYPES)
 
     # Read tables
     stn_df = pd.read_sql("SELECT * FROM stations", eng)
