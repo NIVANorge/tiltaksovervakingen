@@ -1,85 +1,85 @@
-vannmiljo_code,sample_date,lab,depth1,depth2,par_unit,flag,value
-020-45013,2021-06-23,Eurofins,0.0,0.0,CA_mg/l,nan,2.9
-020-45013,2021-06-23,Eurofins,0.0,0.0,CA_mg/l,nan,1.1
-020-45013,2021-06-23,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,7.0
-020-45013,2021-06-23,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.2
-020-45013,2021-06-23,Eurofins,0.0,0.0,TEMP_°C,nan,19.0
-020-45013,2021-06-23,Eurofins,0.0,0.0,TEMP_°C,nan,20.0
-020-45060,2021-06-23,Eurofins,0.0,0.0,CA_mg/l,nan,0.7
-020-45060,2021-06-23,Eurofins,0.0,0.0,CA_mg/l,nan,0.64
-020-45060,2021-06-23,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.8
-020-45060,2021-06-23,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.6
-020-45060,2021-06-23,Eurofins,0.0,0.0,TEMP_°C,nan,19.0
-020-45060,2021-06-23,Eurofins,0.0,0.0,TEMP_°C,nan,20.0
-021-101031,2021-05-26,Eurofins,0.0,0.0,CA_mg/l,nan,0.69
-021-101031,2021-05-26,Eurofins,0.0,0.0,CA_mg/l,nan,0.62
-021-101031,2021-05-26,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.1
-021-101031,2021-05-26,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.1
-021-101031,2021-05-26,Eurofins,0.0,0.0,TEMP_°C,nan,7.8
-021-101031,2021-05-26,Eurofins,0.0,0.0,TEMP_°C,nan,7.8
-021-32115,2021-05-26,Eurofins,0.0,0.0,CA_mg/l,nan,0.97
-021-32115,2021-05-26,Eurofins,0.0,0.0,CA_mg/l,nan,0.91
-021-32115,2021-05-26,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.8
-021-32115,2021-05-26,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.9
-021-32115,2021-05-26,Eurofins,0.0,0.0,TEMP_°C,nan,8.4
-021-32115,2021-05-26,Eurofins,0.0,0.0,TEMP_°C,nan,8.4
-022-32018,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,0.97
-022-32018,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,1.9
-022-32018,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,67.0
-022-32018,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,17.0
-022-32018,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,3.03
-022-32018,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,4.03
-022-32018,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,73.0
-022-32018,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,8.0
-022-32018,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.4
-022-32018,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.6
-022-32018,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,140.0
-022-32018,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,25.0
-022-32018,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,6.6
-022-32018,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,2.8
-022-32019,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,2.6
-022-32019,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,1.5
-022-32019,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,11.0
-022-32019,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,46.0
-022-32019,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,3.98
-022-32019,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,2.93
-022-32019,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,5.0
-022-32019,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,30.0
-022-32019,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.7
-022-32019,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.1
-022-32019,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,16.0
-022-32019,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,76.0
-022-32019,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,3.1
-022-32019,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,6.0
-022-32020,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,3.0
-022-32020,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,1.6
-022-32020,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,9.5
-022-32020,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,43.0
-022-32020,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,5.48
-022-32020,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,3.65
-022-32020,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,8.0
-022-32020,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,28.0
-022-32020,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.7
-022-32020,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.2
-022-32020,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,17.0
-022-32020,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,71.0
-022-32020,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,3.0
-022-32020,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,4.6
-022-58904,2021-04-15,Eurofins,0.0,0.0,CA_mg/l,nan,1.4
-022-58904,2021-04-15,Eurofins,0.0,0.0,CA_mg/l,nan,2.0
-022-58904,2021-04-15,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.2
-022-58904,2021-04-15,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.4
-022-58904,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,3.7
-022-58904,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,1.3
-022-58904,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,7.8
-022-58904,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,50.0
-022-58904,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,5.99
-022-58904,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,3.29
-022-58904,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,4.0
-022-58904,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,35.0
-022-58904,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.5
-022-58904,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.0
-022-58904,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,12.0
-022-58904,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,85.0
-022-58904,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,3.0
-022-58904,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,5.2
+vannmiljo_code,sample_date,lab,depth1,depth2,par_unit,flag,value,period
+020-45013,2021-06-23,Eurofins,0.0,0.0,CA_mg/l,nan,2.9,new
+020-45013,2021-06-23,Eurofins,0.0,0.0,CA_mg/l,nan,1.1,new
+020-45013,2021-06-23,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,7.0,new
+020-45013,2021-06-23,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.2,new
+020-45013,2021-06-23,Eurofins,0.0,0.0,TEMP_°C,nan,19.0,new
+020-45013,2021-06-23,Eurofins,0.0,0.0,TEMP_°C,nan,20.0,new
+020-45060,2021-06-23,Eurofins,0.0,0.0,CA_mg/l,nan,0.7,new
+020-45060,2021-06-23,Eurofins,0.0,0.0,CA_mg/l,nan,0.64,new
+020-45060,2021-06-23,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.8,new
+020-45060,2021-06-23,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.6,new
+020-45060,2021-06-23,Eurofins,0.0,0.0,TEMP_°C,nan,19.0,new
+020-45060,2021-06-23,Eurofins,0.0,0.0,TEMP_°C,nan,20.0,new
+021-101031,2021-05-26,Eurofins,0.0,0.0,CA_mg/l,nan,0.69,new
+021-101031,2021-05-26,Eurofins,0.0,0.0,CA_mg/l,nan,0.62,new
+021-101031,2021-05-26,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.1,new
+021-101031,2021-05-26,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.1,new
+021-101031,2021-05-26,Eurofins,0.0,0.0,TEMP_°C,nan,7.8,new
+021-101031,2021-05-26,Eurofins,0.0,0.0,TEMP_°C,nan,7.8,new
+021-32115,2021-05-26,Eurofins,0.0,0.0,CA_mg/l,nan,0.97,new
+021-32115,2021-05-26,Eurofins,0.0,0.0,CA_mg/l,nan,0.91,new
+021-32115,2021-05-26,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.8,new
+021-32115,2021-05-26,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.9,new
+021-32115,2021-05-26,Eurofins,0.0,0.0,TEMP_°C,nan,8.4,new
+021-32115,2021-05-26,Eurofins,0.0,0.0,TEMP_°C,nan,8.4,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,0.97,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,1.9,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,67.0,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,17.0,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,3.03,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,4.03,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,73.0,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,8.0,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.4,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.6,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,140.0,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,25.0,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,6.6,new
+022-32018,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,2.8,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,2.6,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,1.5,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,11.0,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,46.0,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,3.98,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,2.93,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,5.0,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,30.0,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.7,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.1,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,16.0,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,76.0,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,3.1,new
+022-32019,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,6.0,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,3.0,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,1.6,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,9.5,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,43.0,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,5.48,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,3.65,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,8.0,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,28.0,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.7,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.2,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,17.0,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,71.0,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,3.0,new
+022-32020,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,4.6,new
+022-58904,2021-04-15,Eurofins,0.0,0.0,CA_mg/l,nan,1.4,new
+022-58904,2021-04-15,Eurofins,0.0,0.0,CA_mg/l,nan,2.0,new
+022-58904,2021-04-15,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.2,new
+022-58904,2021-04-15,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.4,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,3.7,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,CA_mg/l,nan,1.3,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,7.8,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,ILAL_µg/l Al,nan,50.0,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,5.99,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,KOND_mS/m,nan,3.29,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,4.0,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,LAL_µg/l Al,nan,35.0,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.5,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.0,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,12.0,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,RAL_µg/l Al,nan,85.0,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,3.0,new
+022-58904,2021-05-12,Eurofins,0.0,0.0,TOC_mg/l C,nan,5.2,new
