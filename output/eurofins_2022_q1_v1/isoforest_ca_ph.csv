@@ -1,0 +1,5 @@
+vannmiljo_code,sample_date,lab,period,depth1,depth2,CA_mg/l,PH_<ubenevnt>,pred
+030-58838,2022-02-22 07:05:58,Eurofins,new,0.0,0.0,5.5,6.0,outlier
+030-58838,2022-03-01 07:15:00,Eurofins,new,0.0,0.0,5.6,6.0,outlier
+061-58800,2022-02-02 07:05:43,Eurofins,new,0.0,0.0,7.6,6.9,outlier
+061-58800,2022-02-16 10:55:24,Eurofins,new,0.0,0.0,7.0,7.0,outlier
