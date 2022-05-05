@@ -367,8 +367,8 @@ def check_no3_totn(df):
 
     if len(mask_df_toc) > 0:
         st.markdown(
-            "The following samples have nitrate greater than total nitrogen **and** TOC > 5 mg/l.\n"
-            "This is considered unlikely to be within instrument error"
+            "Of these, the following samples have nitrate greater than total nitrogen **and** TOC > 5 mg/l.\n"
+            "This is unlikely to be within instrument error"
         )
         st.dataframe(mask_df_toc)
 
