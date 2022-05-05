@@ -6,8 +6,8 @@ def app():
     st.markdown(
         """This application implements preliminary quality checking of data from Tiltaksovervåkingen.
            Data must be supplied using the Excel template available 
-           [here](https://nivanorge.github.io/tiltaksovervakingen/) (please do not modify any 
-           column headings).
+           [here](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/data/tiltaksovervakingen_blank_data_template.xlsx) 
+           (please do not modify any column headings).
     """
     )
     st.markdown(
