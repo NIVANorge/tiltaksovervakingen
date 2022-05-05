@@ -46,5 +46,11 @@ def app():
             before sending the cleaned file to NIVA for further processing.
         """
         )
+        st.markdown(
+            """**Tip:** If you wish to try out the app, you can download two example Excel files containing 
+            "fake errors" to illustrate how the tests work. Click the Excel files 
+            [here](https://github.com/NIVANorge/tiltaksovervakingen/tree/master/app/test_data) and then use the
+            `Download` button to save each file to your local machine.
+        """
 
     return None
