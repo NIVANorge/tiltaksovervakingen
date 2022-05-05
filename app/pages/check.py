@@ -18,7 +18,7 @@ def app():
             st.markdown(f"**File name:** `{data_file.name}`")
             df = read_data_template(data_file, sheet_name="results", lab=lab)
             stn_df = pd.read_excel(
-                r"../data/active_stations_2020.xlsx", sheet_name="data"
+                r"./data/active_stations_2020.xlsx", sheet_name="data"
             )
             st.dataframe(df.astype(str))
 
@@ -49,7 +49,7 @@ def get_par_unit_mappings():
         Dataframe.
     """
     df = pd.read_excel(
-        r"../data/parameter_unit_mapping.xlsx",
+        r"./data/parameter_unit_mapping.xlsx",
         sheet_name="to_vannmiljo",
         keep_default_na=False,
     )
@@ -62,7 +62,7 @@ def read_data_template(file_path, sheet_name="results", lab="Eurofins"):
     """Read lab data from the agreed template in 'wide' format. An example of
     the template is here:
 
-            ../../data/vestfold_lab_data_to_2020-08-31.xls
+            ./data/vestfold_lab_data_to_2020-08-31.xls
 
     Args:
         file_path:  Raw str. Path to Excel template

@@ -12,7 +12,7 @@ PAGES = {
 def main():
     """Main function of the app."""
     st.title("Tiltaksovervåkingen QC app")
-    st.sidebar.image(r"./images/niva-logo.png", use_column_width=True)
+    st.sidebar.image(r"./app/images/niva-logo.png", use_column_width=True)
     st.sidebar.title("Navigation")
     selection = st.sidebar.radio("Go to", list(PAGES.keys()))
     page = PAGES[selection]
