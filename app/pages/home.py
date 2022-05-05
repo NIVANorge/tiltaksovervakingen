@@ -52,5 +52,6 @@ def app():
             [here](https://github.com/NIVANorge/tiltaksovervakingen/tree/master/app/test_data) and then use the
             `Download` button to save each file to your local machine.
         """
+        )
 
     return None
