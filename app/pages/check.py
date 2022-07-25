@@ -128,7 +128,7 @@ def read_data_template(file_path, sheet_name="results", lab="Eurofins"):
 
     if n_errors > 0:
         st.error(
-            "ERROR: The data file is missing some required columns. Please use the "
+            "ERROR: The data file is missing some required parameters. Please use the "
             "template available here:\n\n"
             "https://github.com/NIVANorge/tiltaksovervakingen/blob/master/data/tiltaksovervakingen_blank_data_template.xlsx"
         )
@@ -226,7 +226,7 @@ def check_missing_parameters(df):
     if n_errors == 0:
         st.success("OK!")
     else:
-        st.warning("WARNING: Some expected parameters have not been reported.")
+        st.warning("WARNING: Some columns for expected parameters do not contain any data.")
 
     return None
 
