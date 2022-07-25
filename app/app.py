@@ -1,11 +1,11 @@
 import streamlit as st
 
-import pages.check
-import pages.home
+import subpages.check
+import subpages.home
 
 PAGES = {
-    "Home": pages.home,
-    "Check data": pages.check,
+    "Home": subpages.home,
+    "Check data": subpages.check,
 }
 
 
