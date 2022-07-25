@@ -120,6 +120,20 @@ def read_data_template(file_path, sheet_name="results", lab="Eurofins"):
             par_df[f"{lab.lower()}_name"], par_df[f"{lab.lower()}_unit"]
         )
     ]
+    n_errors = 0
+    for col in cols:
+        if col not in df.columns:
+            n_errors += 1
+            st.markdown(f" * Column **{col}** is missing from the data file provided.")
+
+    if n_errors > 0:
+        st.error(
+            "ERROR: The data file is missing some required columns. Please use the "
+            "template available here:\n\n"
+            "https://github.com/NIVANorge/tiltaksovervakingen/blob/master/data/tiltaksovervakingen_blank_data_template.xlsx"
+        )
+        st.stop()
+
     df = df[
         ["vannmiljo_code", "station_name", "sample_date", "depth1", "depth2"]
         + cols
