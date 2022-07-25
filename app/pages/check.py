@@ -205,7 +205,7 @@ def check_missing_parameters(df):
     ]
     n_errors = 0
     for col in col_list:
-        if df[par].isnull().all():
+        if df[col].isnull().all():
             n_errors += 1
             st.markdown(f" * Column **{col}** does not contain any data.")
 
