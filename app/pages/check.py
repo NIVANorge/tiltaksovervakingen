@@ -172,6 +172,50 @@ def check_numeric(df):
     return None
 
 
+def check_missing_parameters(df):
+    """Check that relevant columns in 'df' contain at least some data.
+
+    Args:
+        df: Dataframe of sumbitted water chemistry data
+
+    Returns:
+        None. Problems identified are printed to output.
+    """
+    st.header("Checking for expected parameters")
+    col_list = [
+        "pH_enh",
+        "Kond_ms/m",
+        "Alk_mmol/l",
+        "Tot-P_µg/l",
+        "Tot-N_µg/l",
+        "NO3_µg/l",
+        "TOC_mg/l",
+        "RAl_µg/l",
+        "ILAl_µg/l",
+        "LAl_µg/l",
+        "Cl_mg/l",
+        "SO4_mg/l",
+        "Ca_mg/l",
+        "K_mg/l",
+        "Mg_mg/l",
+        "Na_mg/l",
+        "SIO2_µg/l",
+        "ANC_µekv/l",
+    ]
+    n_errors = 0
+    for col in col_list:
+        if df[par].isnull().all():
+            n_errors += 1
+            st.markdown(f" * Column **{col}** does not contain any data.")
+
+    if n_errors == 0:
+        st.success("OK!")
+    else:
+        st.warning("WARNING: Some expected parameters have not been reported.")
+
+    return None
+
+
 def check_greater_than_zero(df):
     """Check that relevant columns in 'df' contain values greater than zero.
 
@@ -349,6 +393,7 @@ def check_no3_totn(df):
             "NO3_µg/l",
             "Tot-N_µg/l",
             "TOC_mg/l",
+            "labreferanse",
         ]
     ].copy()
 
@@ -399,6 +444,7 @@ def check_ral_ilal_lal(df):
             "RAl_µg/l",
             "ILAl_µg/l",
             "LAl_µg/l",
+            "labreferanse",
         ]
     ].copy()
     mask_df.dropna(subset="LAl_µg/l", inplace=True)
@@ -442,6 +488,7 @@ def check_lal_ph(df):
             "depth2",
             "pH_enh",
             "LAl_µg/l",
+            "labreferanse",
         ]
     ].copy()
     mask_df = mask_df[(mask_df["pH_enh"] > 6.4) & (mask_df["LAl_µg/l"] > 20)]
