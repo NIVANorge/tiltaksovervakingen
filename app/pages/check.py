@@ -24,6 +24,7 @@ def app():
 
         # Begin QC checks
         check_numeric(df)
+        check_missing_parameters(df)
         check_greater_than_zero(df)
         check_lod_consistent(df)
         check_stations(df, stn_df)
