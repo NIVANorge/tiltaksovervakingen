@@ -38,7 +38,7 @@ def app():
     return None
 
 
-@st.cache
+# @st.cache
 def get_par_unit_mappings():
     """Get dataframe mapping parameters and units as reported by Vestfold Lab and Eurofins
     to those used in Vannmiljø.
@@ -58,7 +58,7 @@ def get_par_unit_mappings():
     return df
 
 
-@st.cache
+# @st.cache
 def read_data_template(file_path, sheet_name="results", lab="Eurofins"):
     """Read lab data from the agreed template in 'wide' format. An example of
     the template is here:
