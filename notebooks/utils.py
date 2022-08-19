@@ -460,7 +460,8 @@ def read_historic_data(file_path):
             file_path,
             sheet_name="VannmiljoEksport",
             # usecols="A:I,Q:U,W", # For use with Vannmiljø files exported before July 2021
-            usecols="A:J,R:W,Y",  # Compatible with new Vannmiljø layout (August 2021 onwards)
+            # usecols="A:J,R:W,Y",  # Compatible with Vannmiljø layout (August 2021  - August 2022)
+            usecols="A:J,R:T,V,X:Y,AA",  # Compatible with Vannmiljø layout (August 2022  - onwards)
             keep_default_na=False,
         )
 
@@ -552,7 +553,7 @@ def handle_duplicates(df, dup_csv, action="drop"):
     key_cols = [
         "vannmiljo_code",
         "sample_date",
-        "lab",
+        # "lab",
         "depth1",
         "depth2",
         "par_unit",
