@@ -444,7 +444,7 @@ def convert_units_to_vannmiljo(df, par_df, lab):
     return df
 
 
-def read_historic_data(file_path):
+def read_historic_data(file_path, st_yr=2012, end_yr=2020):
     """Read historic data exported from Vannmiljø.
 
      Args:
@@ -508,6 +508,9 @@ def read_historic_data(file_path):
         df["sample_date"] = pd.to_datetime(
             df["sample_date"], format="%Y-%m-%d %H:%M:%S"
         )
+        
+        # Subset to date range
+        df = df.query(f"'{st_yr}-01-01' <= sample_date <= '{end_yr}-12-31'")
 
         # Tidy
         df["depth1"].fillna(0, inplace=True)
