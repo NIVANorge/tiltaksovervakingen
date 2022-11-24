@@ -118,6 +118,15 @@ Each quarter, the lab submits data for assessment. The initial dataset is labell
  * [Table of time series outliers](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2022_q2_v1/timerseries_outliers.csv)
  * Water sample level outliers ([table](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2022_q2_v1/isoforest_ca_ph.csv) and [plot](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2022_q2_v1/isoforest_ca_ph_plot.png))
  * [Distributions for aluminium](https://raw.githubusercontent.com/NIVANorge/tiltaksovervakingen/master/output/eurofins_2022_q2_v1/al_fracs_displots_by_period.png) 
+ 
+### Eurofins 2022 Q3 (v1)
+
+ * [Summary of basic checks](https://nbviewer.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/eurofins_2022_q3/01_data_processing.ipynb#9.-Version-1-summary)
+ * [Distribution plots](https://nivanorge.github.io/tiltaksovervakingen/output/eurofins_2022_q2_v1/distribution_plots.html) 
+ * [Time series outlier plots](https://nivanorge.github.io/tiltaksovervakingen/output/eurofins_2022_q3_v1/timeseries_plots.html)  
+ * [Table of time series outliers](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2022_q3_v1/timerseries_outliers.csv)
+ * Water sample level outliers ([table](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2022_q3_v1/isoforest_ca_ph.csv) and [plot](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2022_q3_v1/isoforest_ca_ph_plot.png))
+ * [Distributions for aluminium](https://raw.githubusercontent.com/NIVANorge/tiltaksovervakingen/master/output/eurofins_2022_q3_v1/al_fracs_displots_by_period.png) 
 
 ## Workflow details
 
