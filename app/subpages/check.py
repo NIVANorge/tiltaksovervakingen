@@ -226,7 +226,9 @@ def check_missing_parameters(df):
     if n_errors == 0:
         st.success("OK!")
     else:
-        st.warning("WARNING: Some columns for expected parameters do not contain any data.")
+        st.warning(
+            "WARNING: Some columns for expected parameters do not contain any data."
+        )
 
     return None
 
@@ -506,6 +508,9 @@ def check_lal_ph(df):
             "labreferanse",
         ]
     ].copy()
+    mask_df["LAl_µg/l"] = pd.to_numeric(
+        mask_df["LAl_µg/l"].astype(str).str.strip("<").str.replace(",", ".")
+    )
     mask_df = mask_df[(mask_df["pH_enh"] > 6.4) & (mask_df["LAl_µg/l"] > 20)]
     if len(mask_df) > 0:
         st.markdown(
