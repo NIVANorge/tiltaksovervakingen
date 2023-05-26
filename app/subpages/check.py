@@ -508,6 +508,7 @@ def check_lal_ph(df):
             "labreferanse",
         ]
     ].copy()
+    mask_df["LAl_µg/l"].fillna(0, inplace=True)
     mask_df["LAl_µg/l"] = pd.to_numeric(
         mask_df["LAl_µg/l"].astype(str).str.strip("<").str.replace(",", ".")
     )
