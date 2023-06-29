@@ -335,8 +335,8 @@ def check_stations(df, stn_df):
         if len(names) > 1:
             msg += f"\n * Site `{site_id}` (`{true_name[0]}`) has multiple names: `{names}`"
 
-        if true_name[0] not in names:
-            msg += f"\n * Name for site ID `{site_id}` should be `{true_name[0]}`"
+        # if true_name[0] not in names:
+        #     msg += f"\n * Name for site ID `{site_id}` should be `{true_name[0]}`"
 
     if msg != "":
         n_errors += 1
@@ -355,8 +355,8 @@ def check_stations(df, stn_df):
         if len(ids) > 1:
             msg += f"\n * **{site_name}** has multiple IDs: `{ids}`"
 
-        if true_id[0] not in ids:
-            msg += f"\n * Site ID for `{site_name}` should be `{true_id[0]}`"
+        # if true_id[0] not in ids:
+        #     msg += f"\n * Site ID for `{site_name}` should be `{true_id[0]}`"
 
     if msg != "":
         n_errors += 1
