@@ -76,7 +76,7 @@ def read_data_template_to_wide(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
     )
     df["depth1"].fillna(0, inplace=True)  # Assume depth is 0 unless otherwise stated
     df["depth2"] = df["depth1"]  # Assume no mixed/integrated samples
-    df["sample_date"] = pd.to_datetime(df["sample_date"], format="%d.%m.%Y")
+    df["sample_date"] = pd.to_datetime(df["sample_date"], format="%Y-%m-%d %H:%M:%S")
 
     # Get pars of interest
     cols = [

@@ -1,0 +1,35 @@
+sample_date,vannmiljo_code,lab,period,depth1,depth2,par,value,outlier
+2023-01-30,019-44498,Eurofins,new,0.0,0.0,ANC_µekv/l,97.0,1
+2023-01-30,02.01-58890,Eurofins,new,0.0,0.0,ALK_mmol/l,0.25,1
+2023-01-17,021-28451,Eurofins,new,0.0,0.0,KOND_mS/m,2.93,1
+2023-01-05,022-32018,Eurofins,new,0.0,0.0,CA_mg/l,4.9,1
+2022-10-31,022-32020,Eurofins,new,0.0,0.0,CA_mg/l,6.6,1
+2023-01-11,023-58885,Eurofins,new,0.0,0.0,P-TOT_µg/l P,18.0,1
+2023-01-02,027-58828,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.8,1
+2023-01-09,027-58828,Eurofins,new,0.0,0.0,P-TOT_µg/l P,6.6,1
+2023-01-30,027-58829,Eurofins,new,0.0,0.0,ALK_mmol/l,0.32,1
+2023-02-27,027-59614,Eurofins,new,0.0,0.0,CA_mg/l,2.7,1
+2023-01-02,030-58764,Eurofins,new,0.0,0.0,CA_mg/l,3.8,1
+2023-01-09,030-58837,Eurofins,new,0.0,0.0,P-TOT_µg/l P,19.0,1
+2023-03-06,030-58838,Eurofins,new,0.0,0.0,CA_mg/l,10.0,1
+2023-02-06,030-58838,Eurofins,new,0.0,0.0,N-NO3_µg/l N,1900.0,1
+2023-01-09,031-38523,Eurofins,new,0.0,0.0,P-TOT_µg/l P,9.8,1
+2023-01-09,031-58843,Eurofins,new,0.0,0.0,P-TOT_µg/l P,3.1,1
+2023-01-02,031-58844,Eurofins,new,0.0,0.0,CA_mg/l,7.3,1
+2023-02-13,031-58844,Eurofins,new,0.0,0.0,CA_mg/l,3.0,1
+2023-02-20,031-58844,Eurofins,new,0.0,0.0,CA_mg/l,3.1,1
+2023-02-27,031-58844,Eurofins,new,0.0,0.0,CA_mg/l,6.0,1
+2023-03-20,031-58844,Eurofins,new,0.0,0.0,CA_mg/l,2.3,1
+2023-03-27,031-58844,Eurofins,new,0.0,0.0,CA_mg/l,2.7,1
+2023-02-06,032-58839,Eurofins,new,0.0,0.0,N-NO3_µg/l N,330.0,1
+2023-01-02,036-58863,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.3,1
+2023-03-06,061-58800,Eurofins,new,0.0,0.0,CA_mg/l,6.6,1
+2023-03-29,061-58800,Eurofins,new,0.0,0.0,CA_mg/l,7.7,1
+2023-03-06,061-58800,Eurofins,new,0.0,0.0,KOND_mS/m,12.9,1
+2023-03-29,061-58800,Eurofins,new,0.0,0.0,KOND_mS/m,15.0,1
+2023-03-13,063-58805,Eurofins,new,0.0,0.0,CA_mg/l,16.0,1
+2023-01-03,064-28997,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.5,1
+2023-01-02,082-58875,Eurofins,new,0.0,0.0,N-NO3_µg/l N,630.0,1
+2023-01-30,082-58875,Eurofins,new,0.0,0.0,N-NO3_µg/l N,470.0,1
+2023-01-02,082-58875,Eurofins,new,0.0,0.0,N-TOT_µg/l N,580.0,1
+2023-01-30,082-58875,Eurofins,new,0.0,0.0,N-TOT_µg/l N,480.0,1
