@@ -325,7 +325,7 @@ def check_stations(df, stn_df):
         )
         st.code(set(df["vannmiljo_code"]) - set(stn_df["vannmiljo_code"]))
 
-    # Check station ID have consistent names
+    # Check station IDs have consistent names
     msg = ""
     site_ids = df["vannmiljo_code"].unique()
     for site_id in site_ids:
@@ -333,7 +333,10 @@ def check_stations(df, stn_df):
         names = df.query("vannmiljo_code == @site_id")["station_name"].unique()
 
         if len(names) > 1:
-            msg += f"\n * **{site_id}** ({true_name[0]}) has names: `{names}`"
+            msg += f"\n * Site `{site_id}` (`{true_name[0]}`) has multiple names: `{names}`"
+
+        if true_name[0] not in names:
+            msg += f"\n * Name for site ID `{site_id}` should be `{true_name[0]}`"
 
     if msg != "":
         n_errors += 1
@@ -350,7 +353,11 @@ def check_stations(df, stn_df):
         ids = df.query("station_name == @site_name")["vannmiljo_code"].unique()
 
         if len(ids) > 1:
-            msg += f"\n * **{site_name}** has IDs: `{ids}`"
+            msg += f"\n * **{site_name}** has multiple IDs: `{ids}`"
+
+        if true_id[0] not in ids:
+            msg += f"\n * Site ID for `{site_name}` should be `{true_id[0]}`"
+
     if msg != "":
         n_errors += 1
         st.markdown(
