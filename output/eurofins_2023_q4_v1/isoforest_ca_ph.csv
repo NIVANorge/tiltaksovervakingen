@@ -1,0 +1,13 @@
+vannmiljo_code,sample_date,lab,period,depth1,depth2,CA_mg/l,PH_<ubenevnt>,pred
+019-101022,2023-10-30,Eurofins,new,0.0,0.0,13.0,6.0,outlier
+020-45013,2023-11-13,Eurofins,new,0.0,0.0,4.5,7.3,outlier
+021-28450,2023-10-16,Eurofins,new,0.0,0.0,4.6,7.3,outlier
+021-28450,2023-12-04,Eurofins,new,0.0,0.0,5.5,6.6,outlier
+022-32018,2023-10-13,Eurofins,new,0.0,0.0,6.9,7.3,outlier
+022-58904,2023-10-31,Eurofins,new,0.0,0.0,5.7,6.8,outlier
+030-58838,2023-11-13,Eurofins,new,0.0,0.0,11.0,5.9,outlier
+031-58844,2023-12-04,Eurofins,new,0.0,0.0,5.9,6.8,outlier
+031-58844,2023-12-18,Eurofins,new,0.0,0.0,5.5,6.3,outlier
+079-58878,2023-10-30,Eurofins,new,0.0,0.0,5.4,6.3,outlier
+079-58878,2023-12-04,Eurofins,new,0.0,0.0,9.0,6.2,outlier
+082-50557,2023-10-16,Eurofins,new,0.0,0.0,18.0,5.4,outlier
