@@ -162,7 +162,7 @@ def wide_to_long(df, lab):
     df = df.astype(
         {
             "vannmiljo_code": "str",
-            "sample_date": "datetime64",
+            "sample_date": "datetime64[ns]",
             "lab": "str",
             "depth1": "float",
             "depth2": "float",
@@ -536,7 +536,7 @@ def read_historic_data(file_path, st_yr=2012, end_yr=2020):
         df = df.astype(
             {
                 "vannmiljo_code": "str",
-                "sample_date": "datetime64",
+                "sample_date": "datetime64[ns]",
                 "lab": "str",
                 "depth1": "float",
                 "depth2": "float",
