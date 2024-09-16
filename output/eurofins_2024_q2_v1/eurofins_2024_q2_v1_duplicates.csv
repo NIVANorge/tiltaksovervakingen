@@ -1,0 +1,13 @@
+vannmiljo_code,sample_date,lab,depth1,depth2,par_unit,flag,value,period
+036-58752,2024-04-08,Eurofins,0.0,0.0,CA_mg/l,nan,0.5,new
+036-58752,2024-04-08,Eurofins,0.0,0.0,CA_mg/l,nan,0.41,new
+036-58752,2024-04-08,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.4,new
+036-58752,2024-04-08,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,5.5,new
+036-58752,2024-04-08,Eurofins,0.0,0.0,TEMP_°C,nan,3.2,new
+036-58752,2024-04-08,Eurofins,0.0,0.0,TEMP_°C,nan,3.2,new
+036-58753,2024-04-08,Eurofins,0.0,0.0,CA_mg/l,nan,0.84,new
+036-58753,2024-04-08,Eurofins,0.0,0.0,CA_mg/l,nan,0.74,new
+036-58753,2024-04-08,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.0,new
+036-58753,2024-04-08,Eurofins,0.0,0.0,PH_<ubenevnt>,nan,6.0,new
+036-58753,2024-04-08,Eurofins,0.0,0.0,TEMP_°C,nan,4.2,new
+036-58753,2024-04-08,Eurofins,0.0,0.0,TEMP_°C,nan,4.2,new
