@@ -1,0 +1,44 @@
+sample_date,vannmiljo_code,lab,period,depth1,depth2,par,value,outlier
+2024-07-08,019-58793,Eurofins,new,0.0,0.0,ILAL_µg/l Al,110.0,1
+2024-08-05,020-44497,Eurofins,new,0.0,0.0,K_mg/l,0.75,1
+2024-07-01,020-58796,Eurofins,new,0.0,0.0,CA_mg/l,0.91,1
+2024-09-03,020-58796,Eurofins,new,0.0,0.0,P-TOT_µg/l P,11.0,1
+2024-07-01,021-28450,Eurofins,new,0.0,0.0,CA_mg/l,8.3,1
+2024-07-14,021-28451,Eurofins,new,0.0,0.0,KOND_mS/m,4.9,1
+2024-07-01,022-32018,Eurofins,new,0.0,0.0,CA_mg/l,9.0,1
+2024-07-11,022-32018,Eurofins,new,0.0,0.0,CA_mg/l,4.7,1
+2024-07-29,022-32018,Eurofins,new,0.0,0.0,CA_mg/l,8.5,1
+2024-08-11,022-32018,Eurofins,new,0.0,0.0,CA_mg/l,8.5,1
+2024-09-02,022-32018,Eurofins,new,0.0,0.0,CA_mg/l,5.8,1
+2024-07-11,022-32019,Eurofins,new,0.0,0.0,ILAL_µg/l Al,160.0,1
+2024-08-21,024-58894,Eurofins,new,0.0,0.0,ANC_µekv/l,290.0,1
+2024-08-21,024-58894,Eurofins,new,0.0,0.0,MG_mg/l,1.9,1
+2024-08-21,024-58894,Eurofins,new,0.0,0.0,P-TOT_µg/l P,41.0,1
+2024-08-06,024-58896,Eurofins,new,0.0,0.0,CA_mg/l,0.8,1
+2024-08-27,024-58896,Eurofins,new,0.0,0.0,CA_mg/l,0.68,1
+2024-09-11,024-58896,Eurofins,new,0.0,0.0,CA_mg/l,0.85,1
+2024-07-01,025-81555,Eurofins,new,0.0,0.0,ANC_µekv/l,-140.0,1
+2024-07-01,027-58828,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.2,1
+2024-07-29,027-58829,Eurofins,new,0.0,0.0,ALK_mmol/l,0.63,1
+2024-07-29,027-58829,Eurofins,new,0.0,0.0,KOND_mS/m,7.65,1
+2024-07-29,027-58829,Eurofins,new,0.0,0.0,PH_<ubenevnt>,8.1,1
+2024-07-08,031-38523,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.8,1
+2024-07-08,031-58843,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.5,1
+2024-08-04,032-58839,Eurofins,new,0.0,0.0,KOND_mS/m,12.1,1
+2024-07-01,036-58863,Eurofins,new,0.0,0.0,ANC_µekv/l,87.0,1
+2024-07-29,036-58863,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.1,1
+2024-08-19,036-58863,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.3,1
+2024-09-03,036-58863,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.4,1
+2024-09-11,045-58816,Eurofins,new,0.0,0.0,K_mg/l,1.8,1
+2024-09-11,045-58816,Eurofins,new,0.0,0.0,N-NO3_µg/l N,1300.0,1
+2024-09-11,045-58816,Eurofins,new,0.0,0.0,N-TOT_µg/l N,1400.0,1
+2024-09-11,045-58816,Eurofins,new,0.0,0.0,P-TOT_µg/l P,67.0,1
+2024-08-22,045-58817,Eurofins,new,0.0,0.0,P-TOT_µg/l P,14.0,1
+2024-07-01,061-58800,Eurofins,new,0.0,0.0,CA_mg/l,5.7,1
+2024-09-02,061-58800,Eurofins,new,0.0,0.0,CA_mg/l,4.0,1
+2024-07-15,061-58801,Eurofins,new,0.0,0.0,ILAL_µg/l Al,90.0,1
+2024-07-15,061-58801,Eurofins,new,0.0,0.0,RAL_µg/l Al,100.0,1
+2024-07-01,062-58818,Eurofins,new,0.0,0.0,ANC_µekv/l,-66.0,1
+2024-09-02,064-81557,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.2,1
+2024-07-01,064-82800,Eurofins,new,0.0,0.0,SO4_mg/l,2.13,1
+2024-07-29,082-58873,Eurofins,new,0.0,0.0,ALK_mmol/l,0.51,1
