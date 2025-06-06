@@ -207,7 +207,16 @@ Each quarter, the lab submits data for assessment. The initial dataset is labell
  * [Time series outlier plots](https://nivanorge.github.io/tiltaksovervakingen/output/eurofins_2024_q4_v1/timeseries_plots_vegalite5.html)  
  * [Table of time series outliers](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2024_q4_v1/timerseries_outliers.csv)
  * Water sample level outliers ([table](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2024_q4_v1/isoforest_ca_ph.csv) and [plot](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2024_q4_v1/isoforest_ca_ph_plot.png))
- * [Distributions for aluminium](https://raw.githubusercontent.com/NIVANorge/tiltaksovervakingen/master/output/eurofins_2024_q4_v1/al_fracs_displots_by_period.png) 
+ * [Distributions for aluminium](https://raw.githubusercontent.com/NIVANorge/tiltaksovervakingen/master/output/eurofins_2024_q4_v1/al_fracs_displots_by_period.png)
+
+### Eurofins 2025 Q1 (v1)
+
+ * [Summary of basic checks](https://nbviewer.org/github/NIVANorge/tiltaksovervakingen/blob/master/notebooks/eurofins_2025_q1/01_data_processing.ipynb#9.-Version-1-summary)
+ * [Distribution plots](https://nivanorge.github.io/tiltaksovervakingen/output/eurofins_2025_q1_v1/distribution_plots_vegalite5.html) 
+ * [Time series outlier plots](https://nivanorge.github.io/tiltaksovervakingen/output/eurofins_2025_q1_v1/timeseries_plots_vegalite5.html)  
+ * [Table of time series outliers](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2025_q1_v1/timerseries_outliers.csv)
+ * Water sample level outliers ([table](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2025_q1_v1/isoforest_ca_ph.csv) and [plot](https://github.com/NIVANorge/tiltaksovervakingen/blob/master/output/eurofins_2025_q1_v1/isoforest_ca_ph_plot.png))
+ * [Distributions for aluminium](https://raw.githubusercontent.com/NIVANorge/tiltaksovervakingen/master/output/eurofins_2025_q1_v1/al_fracs_displots_by_period.png) 
  
 ## Workflow details
 
