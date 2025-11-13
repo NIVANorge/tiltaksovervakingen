@@ -1,31 +1,70 @@
 sample_date,vannmiljo_code,lab,period,depth1,depth2,par,value,outlier
-2025-02-24,02.01-58890,Eurofins,new,0.0,0.0,P-TOT_µg/l P,31.0,1
 2025-01-13,020-45060,Eurofins,new,0.0,0.0,CA_mg/l,2.3,1
-2025-02-04,020-58796,Eurofins,new,0.0,0.0,CL_mg/l,4.2,1
-2025-03-03,020-58796,Eurofins,new,0.0,0.0,CL_mg/l,4.9,1
-2025-02-04,020-58796,Eurofins,new,0.0,0.0,K_mg/l,0.24,1
-2025-02-04,020-58796,Eurofins,new,0.0,0.0,MG_mg/l,0.29,1
-2025-03-03,020-58796,Eurofins,new,0.0,0.0,MG_mg/l,0.32,1
-2025-03-03,020-58796,Eurofins,new,0.0,0.0,NA_mg/l,2.6,1
-2025-02-04,020-58796,Eurofins,new,0.0,0.0,P-TOT_µg/l P,9.1,1
-2025-03-23,021-28450,Eurofins,new,0.0,0.0,CA_mg/l,7.5,1
+2025-01-27,021-101031,Eurofins,new,0.0,0.0,CL_mg/l,4.0,1
+2025-01-27,021-101031,Eurofins,new,0.0,0.0,MG_mg/l,0.36,1
+2025-01-27,021-101031,Eurofins,new,0.0,0.0,NA_mg/l,1.9,1
+2025-01-27,021-32115,Eurofins,new,0.0,0.0,CL_mg/l,6.8,1
+2025-01-27,021-46388,Eurofins,new,0.0,0.0,CL_mg/l,10.0,1
+2025-02-03,021-46388,Eurofins,new,0.0,0.0,CL_mg/l,7.2,1
+2025-02-24,021-46388,Eurofins,new,0.0,0.0,CL_mg/l,6.3,1
+2025-01-27,021-46388,Eurofins,new,0.0,0.0,KOND_mS/m,4.66,1
+2025-02-03,021-46388,Eurofins,new,0.0,0.0,KOND_mS/m,3.27,1
+2025-02-24,021-46388,Eurofins,new,0.0,0.0,KOND_mS/m,3.45,1
+2025-02-24,021-46388,Eurofins,new,0.0,0.0,K_mg/l,0.23,1
+2025-01-27,021-46388,Eurofins,new,0.0,0.0,MG_mg/l,0.71,1
+2025-02-03,021-46388,Eurofins,new,0.0,0.0,MG_mg/l,0.47,1
+2025-02-24,021-46388,Eurofins,new,0.0,0.0,MG_mg/l,0.4,1
+2025-01-27,021-46388,Eurofins,new,0.0,0.0,NA_mg/l,4.8,1
+2025-02-03,021-46388,Eurofins,new,0.0,0.0,NA_mg/l,3.2,1
+2025-02-24,021-46388,Eurofins,new,0.0,0.0,NA_mg/l,2.8,1
+2025-02-03,021-79146,Eurofins,new,0.0,0.0,CL_mg/l,6.4,1
+2025-01-27,021-79146,Eurofins,new,0.0,0.0,MG_mg/l,0.27,1
+2025-02-03,021-79146,Eurofins,new,0.0,0.0,MG_mg/l,0.36,1
+2025-02-24,021-79146,Eurofins,new,0.0,0.0,MG_mg/l,0.41,1
 2025-01-27,021-79147,Eurofins,new,0.0,0.0,CL_mg/l,5.2,1
+2025-02-03,021-79147,Eurofins,new,0.0,0.0,CL_mg/l,3.7,1
 2025-02-24,021-79147,Eurofins,new,0.0,0.0,CL_mg/l,4.5,1
 2025-01-27,021-79147,Eurofins,new,0.0,0.0,KOND_mS/m,2.72,1
 2025-01-27,021-79147,Eurofins,new,0.0,0.0,MG_mg/l,0.38,1
 2025-02-03,021-79147,Eurofins,new,0.0,0.0,MG_mg/l,0.27,1
 2025-02-24,021-79147,Eurofins,new,0.0,0.0,MG_mg/l,0.31,1
-2025-02-24,022-44499,Eurofins,new,0.0,0.0,MG_mg/l,0.39,1
+2025-01-27,021-79147,Eurofins,new,0.0,0.0,NA_mg/l,2.5,1
+2025-01-27,021-86500,Eurofins,new,0.0,0.0,CL_mg/l,7.5,1
+2025-02-24,021-86500,Eurofins,new,0.0,0.0,CL_mg/l,6.1,1
+2025-01-27,021-86500,Eurofins,new,0.0,0.0,KOND_mS/m,3.4,1
+2025-01-27,021-86500,Eurofins,new,0.0,0.0,MG_mg/l,0.51,1
+2025-02-03,021-86500,Eurofins,new,0.0,0.0,MG_mg/l,0.36,1
+2025-02-24,021-86500,Eurofins,new,0.0,0.0,MG_mg/l,0.41,1
+2025-01-27,021-86500,Eurofins,new,0.0,0.0,NA_mg/l,3.6,1
+2025-02-03,021-86500,Eurofins,new,0.0,0.0,NA_mg/l,2.4,1
+2025-02-24,021-86500,Eurofins,new,0.0,0.0,NA_mg/l,2.6,1
+2025-01-27,021-86768,Eurofins,new,0.0,0.0,CL_mg/l,4.5,1
+2025-02-03,021-86768,Eurofins,new,0.0,0.0,CL_mg/l,5.4,1
+2025-02-24,021-86768,Eurofins,new,0.0,0.0,CL_mg/l,5.9,1
+2025-01-27,021-86768,Eurofins,new,0.0,0.0,MG_mg/l,0.37,1
+2025-02-03,021-86768,Eurofins,new,0.0,0.0,MG_mg/l,0.39,1
+2025-02-24,021-86768,Eurofins,new,0.0,0.0,MG_mg/l,0.43,1
+2025-01-27,021-86768,Eurofins,new,0.0,0.0,NA_mg/l,2.3,1
+2025-02-03,021-86768,Eurofins,new,0.0,0.0,NA_mg/l,2.5,1
+2025-02-24,021-86768,Eurofins,new,0.0,0.0,NA_mg/l,2.6,1
+2025-02-24,022-58899,Eurofins,new,0.0,0.0,KOND_mS/m,3.18,1
+2025-02-27,023-45835,Eurofins,new,0.0,0.0,MG_mg/l,0.6,1
+2025-02-05,023-58889,Eurofins,new,0.0,0.0,KOND_mS/m,6.16,1
+2025-01-28,024-31985,Eurofins,new,0.0,0.0,CL_mg/l,12.0,1
+2025-01-28,024-31985,Eurofins,new,0.0,0.0,KOND_mS/m,4.94,1
+2025-01-28,024-31985,Eurofins,new,0.0,0.0,MG_mg/l,0.79,1
+2025-01-28,024-31985,Eurofins,new,0.0,0.0,NA_mg/l,5.2,1
 2025-01-09,024-58894,Eurofins,new,0.0,0.0,P-TOT_µg/l P,45.0,1
-2025-01-14,024-58896,Eurofins,new,0.0,0.0,CA_mg/l,1.0,1
-2025-01-28,024-58896,Eurofins,new,0.0,0.0,CA_mg/l,0.82,1
 2025-01-27,025-45779,Eurofins,new,0.0,0.0,CA_mg/l,1.2,1
 2025-01-27,025-45779,Eurofins,new,0.0,0.0,CL_mg/l,19.0,1
+2025-02-24,025-45779,Eurofins,new,0.0,0.0,CL_mg/l,9.6,1
 2025-01-27,025-45779,Eurofins,new,0.0,0.0,KOND_mS/m,8.38,1
 2025-01-27,025-45779,Eurofins,new,0.0,0.0,MG_mg/l,1.3,1
 2025-02-24,025-45779,Eurofins,new,0.0,0.0,MG_mg/l,0.62,1
 2025-03-10,025-45779,Eurofins,new,0.0,0.0,MG_mg/l,0.53,1
 2025-01-27,025-45779,Eurofins,new,0.0,0.0,NA_mg/l,8.6,1
+2025-01-27,025-45779,Eurofins,new,0.0,0.0,SO4_mg/l,2.48,1
+2025-01-27,025-81555,Eurofins,new,0.0,0.0,CA_mg/l,1.2,1
 2025-01-27,025-81555,Eurofins,new,0.0,0.0,CL_mg/l,15.0,1
 2025-01-27,025-81555,Eurofins,new,0.0,0.0,KOND_mS/m,6.52,1
 2025-02-24,025-81555,Eurofins,new,0.0,0.0,KOND_mS/m,5.06,1
@@ -34,8 +73,10 @@ sample_date,vannmiljo_code,lab,period,depth1,depth2,par,value,outlier
 2025-03-10,025-81555,Eurofins,new,0.0,0.0,MG_mg/l,0.58,1
 2025-01-27,025-81555,Eurofins,new,0.0,0.0,NA_mg/l,7.0,1
 2025-01-27,027-58828,Eurofins,new,0.0,0.0,CA_mg/l,0.79,1
+2025-01-27,027-58828,Eurofins,new,0.0,0.0,CL_mg/l,12.0,1
 2025-01-27,027-58828,Eurofins,new,0.0,0.0,MG_mg/l,0.94,1
 2025-01-27,027-58828,Eurofins,new,0.0,0.0,NA_mg/l,5.9,1
+2025-02-24,027-58828,Eurofins,new,0.0,0.0,NA_mg/l,5.3,1
 2025-01-06,027-58828,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.5,1
 2025-01-27,027-58829,Eurofins,new,0.0,0.0,ALK_mmol/l,0.43,1
 2025-01-27,027-58829,Eurofins,new,0.0,0.0,CA_mg/l,3.2,1
@@ -46,9 +87,15 @@ sample_date,vannmiljo_code,lab,period,depth1,depth2,par,value,outlier
 2025-01-27,027-58829,Eurofins,new,0.0,0.0,NA_mg/l,15.0,1
 2025-01-27,027-58829,Eurofins,new,0.0,0.0,SO4_mg/l,4.03,1
 2025-02-17,027-58848,Eurofins,new,0.0,0.0,CA_mg/l,2.9,1
+2025-01-27,027-79280,Eurofins,new,0.0,0.0,MG_mg/l,1.1,1
+2025-02-24,027-79280,Eurofins,new,0.0,0.0,P-TOT_µg/l P,45.0,1
+2025-01-27,027-90733,Eurofins,new,0.0,0.0,P-TOT_µg/l P,41.0,1
+2025-01-27,030-47471,Eurofins,new,0.0,0.0,KOND_mS/m,5.67,1
+2025-02-24,030-47471,Eurofins,new,0.0,0.0,KOND_mS/m,5.82,1
 2025-03-10,030-58764,Eurofins,new,0.0,0.0,CA_mg/l,4.4,1
 2025-02-17,030-58835,Eurofins,new,0.0,0.0,CA_mg/l,50.0,1
 2025-02-04,030-58837,Eurofins,new,0.0,0.0,CL_mg/l,17.0,1
+2025-02-04,030-58837,Eurofins,new,0.0,0.0,KOND_mS/m,7.08,1
 2025-02-04,030-58837,Eurofins,new,0.0,0.0,MG_mg/l,1.4,1
 2025-02-04,030-58837,Eurofins,new,0.0,0.0,NA_mg/l,8.9,1
 2025-01-06,030-58838,Eurofins,new,0.0,0.0,ANC_µekv/l,5700.0,1
@@ -80,13 +127,27 @@ sample_date,vannmiljo_code,lab,period,depth1,depth2,par,value,outlier
 2025-01-27,036-58752,Eurofins,new,0.0,0.0,KOND_mS/m,8.11,1
 2025-01-27,036-58753,Eurofins,new,0.0,0.0,KOND_mS/m,8.0,1
 2025-01-27,036-58754,Eurofins,new,0.0,0.0,CA_mg/l,1.6,1
+2025-01-27,036-58754,Eurofins,new,0.0,0.0,KOND_mS/m,5.98,1
 2025-01-27,036-58754,Eurofins,new,0.0,0.0,MG_mg/l,1.1,1
 2025-01-27,036-58754,Eurofins,new,0.0,0.0,NA_mg/l,6.5,1
 2025-01-06,036-58863,Eurofins,new,0.0,0.0,P-TOT_µg/l P,3.2,1
 2025-01-27,036-58863,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.4,1
+2025-02-24,038-44506,Eurofins,new,0.0,0.0,NA_mg/l,3.8,1
+2025-02-24,038-47856,Eurofins,new,0.0,0.0,NA_mg/l,3.4,1
 2025-01-27,038-58747,Eurofins,new,0.0,0.0,CA_mg/l,2.2,1
 2025-02-03,038-58747,Eurofins,new,0.0,0.0,CA_mg/l,1.5,1
 2025-01-27,038-58747,Eurofins,new,0.0,0.0,KOND_mS/m,10.9,1
+2025-02-03,038-58747,Eurofins,new,0.0,0.0,KOND_mS/m,6.39,1
+2025-01-27,038-58853,Eurofins,new,0.0,0.0,CA_mg/l,3.0,1
+2025-01-27,038-58854,Eurofins,new,0.0,0.0,CL_mg/l,22.0,1
+2025-02-03,038-58854,Eurofins,new,0.0,0.0,CL_mg/l,16.0,1
+2025-01-27,038-58854,Eurofins,new,0.0,0.0,KOND_mS/m,8.79,1
+2025-02-03,038-58854,Eurofins,new,0.0,0.0,KOND_mS/m,6.93,1
+2025-01-27,038-58854,Eurofins,new,0.0,0.0,MG_mg/l,1.9,1
+2025-02-03,038-58854,Eurofins,new,0.0,0.0,MG_mg/l,1.4,1
+2025-01-27,038-58854,Eurofins,new,0.0,0.0,NA_mg/l,9.1,1
+2025-02-03,038-58854,Eurofins,new,0.0,0.0,NA_mg/l,7.2,1
+2025-02-24,038-58854,Eurofins,new,0.0,0.0,P-TOT_µg/l P,19.0,1
 2025-01-27,038-58868,Eurofins,new,0.0,0.0,CL_mg/l,14.0,1
 2025-01-27,038-58868,Eurofins,new,0.0,0.0,KOND_mS/m,7.02,1
 2025-01-27,038-58868,Eurofins,new,0.0,0.0,MG_mg/l,1.3,1
@@ -94,8 +155,10 @@ sample_date,vannmiljo_code,lab,period,depth1,depth2,par,value,outlier
 2025-02-24,038-58868,Eurofins,new,0.0,0.0,P-TOT_µg/l P,20.0,1
 2025-01-27,038-88032,Eurofins,new,0.0,0.0,CA_mg/l,3.5,1
 2025-01-06,061-58800,Eurofins,new,0.0,0.0,CA_mg/l,6.1,1
-2025-01-06,061-58800,Eurofins,new,0.0,0.0,KOND_mS/m,8.72,1
 2025-03-06,062-58818,Eurofins,new,0.0,0.0,P-TOT_µg/l P,16.0,1
 2025-02-24,064-28997,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.4,1
 2025-02-24,064-82800,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.3,1
+2025-01-28,067-82877,Eurofins,new,0.0,0.0,P-TOT_µg/l P,2.3,1
+2025-02-24,067-82877,Eurofins,new,0.0,0.0,P-TOT_µg/l P,3.3,1
+2025-02-24,067-82878,Eurofins,new,0.0,0.0,P-TOT_µg/l P,5.1,1
 2025-01-20,082-58877,Eurofins,new,0.0,0.0,KOND_mS/m,14.8,1

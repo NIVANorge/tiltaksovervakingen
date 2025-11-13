@@ -6,6 +6,8 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 
+pd.set_option("future.no_silent_downcasting", True)
+
 
 def get_par_unit_mappings():
     """Get dataframe mapping parameters and units as reported by Vestfold Lab and Eurofins
@@ -74,7 +76,7 @@ def read_data_template_to_wide(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
         inplace=True,
         axis="columns",
     )
-    df["depth1"].fillna(0, inplace=True)  # Assume depth is 0 unless otherwise stated
+    df["depth1"] = df["depth1"].fillna(0)  # Assume depth is 0 unless otherwise stated
     df["depth2"] = df["depth1"]  # Assume no mixed/integrated samples
     df["sample_date"] = pd.to_datetime(df["sample_date"], format="%Y-%m-%d %H:%M:%S")
 
@@ -92,16 +94,17 @@ def read_data_template_to_wide(file_path, sheet_name="Ark1", lab="VestfoldLAB"):
     return df
 
 
-def perform_basic_checks(df):
+def perform_basic_checks(df, stn_xls):
     """Perform basic checks using 'wide' template data.
 
     Args:
         df: Dataframe of tidied template data in 'wide' format
+        stn_xls: Str. Path to Excel file with valid stations
 
     Returns:
         None. Possible issues are printed to output.
     """
-    stn_df = pd.read_excel(r"../../data/active_stations_2020.xlsx", sheet_name="data")
+    stn_df = pd.read_excel(stn_xls, sheet_name="data")
 
     check_stations(df, stn_df)
     check_quarter(df)
@@ -134,7 +137,7 @@ def wide_to_long(df, lab):
         var_name="par_unit",
     )
     df.dropna(subset=["value"], inplace=True)
-    df["flag"] = np.where(df["value"].astype(str).str.contains("<"), "<", np.nan)
+    df["flag"] = np.where(df["value"].astype(str).str.contains("<"), "<", "")
     df["value"] = pd.to_numeric(
         df["value"].astype(str).str.strip("<").str.replace(",", ".")
     )
@@ -192,7 +195,12 @@ def check_numeric(df):
     n_errors = 0
     for col in num_cols:
         num_series = pd.to_numeric(
-            df[col].fillna(-9999).astype(str).str.strip("<").str.replace(",", "."),
+            df[col]
+            .fillna(-9999)
+            .infer_objects(copy=False)
+            .astype(str)
+            .str.strip("<")
+            .str.replace(",", "."),
             errors="coerce",
         )
         non_num_vals = df[pd.isna(num_series)][col].values
@@ -241,7 +249,12 @@ def check_greater_than_zero(df):
     n_errors = 0
     for col in gt_zero_cols:
         num_series = pd.to_numeric(
-            df[col].fillna(-9999).astype(str).str.strip("<").str.replace(",", ".")
+            df[col]
+            .fillna(-9999)
+            .infer_objects(copy=False)
+            .astype(str)
+            .str.strip("<")
+            .str.replace(",", ".")
         )
         num_series[num_series == -9999] = np.nan
         if num_series.min() <= 0:
@@ -358,7 +371,7 @@ def check_no3_totn(df):
     ].copy()
 
     for col in ["NO3_µg/l", "Tot-N_µg/l"]:
-        mask_df[col].fillna(0, inplace=True)
+        mask_df[col] = mask_df[col].fillna(0)
         mask_df[col] = pd.to_numeric(
             mask_df[col].astype(str).str.strip("<").str.replace(",", ".")
         )
@@ -398,7 +411,7 @@ def check_ral_ilal_lal(df):
     mask_df.dropna(subset="LAl_µg/l", inplace=True)
 
     for col in ["RAl_µg/l", "ILAl_µg/l", "LAl_µg/l"]:
-        mask_df[col].fillna(0, inplace=True)
+        mask_df[col] = mask_df[col].fillna(0)
         mask_df[col] = pd.to_numeric(
             mask_df[col].astype(str).str.strip("<").str.replace(",", ".")
         )
@@ -459,9 +472,7 @@ def read_historic_data(file_path, st_yr=2012, end_yr=2020):
         df = pd.read_excel(
             file_path,
             sheet_name="VannmiljoEksport",
-            # usecols="A:I,Q:U,W", # For use with Vannmiljø files exported before July 2021
-            # usecols="A:J,R:W,Y",  # Compatible with Vannmiljø layout (August 2021  - August 2022)
-            usecols="A:J,R:T,V,X:Y,AA",  # Compatible with Vannmiljø layout (August 2022  - onwards)
+            usecols="A:J,R:T,V,X:Y,AA",
             keep_default_na=False,
         )
 
@@ -470,7 +481,7 @@ def read_historic_data(file_path, st_yr=2012, end_yr=2020):
 
         # Tidy
         df["par_unit"] = df["Parameter_id"] + "_" + df["Enhet"]
-        df["value"] = pd.to_numeric(df["Verdi"].str.replace(",", "."))
+        df["value"] = pd.to_numeric(df["Verdi"].astype(str).str.replace(",", "."))
 
         for col in ["Ovre_dyp", "Nedre_dyp"]:
             df[col] = pd.to_numeric(df[col])
@@ -729,6 +740,6 @@ def isolation_forest(df, par_cols, contamination=0.01, random_state=42):
     # Run Iso Forest
     iso = IsolationForest(contamination=contamination, random_state=random_state)
     df["pred"] = iso.fit_predict(df[par_cols])
-    df["pred"].replace({1: "inlier", -1: "outlier"}, inplace=True)
+    df["pred"] = df["pred"].replace({1: "inlier", -1: "outlier"})
 
     return df

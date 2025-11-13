@@ -18,7 +18,7 @@ def app():
             st.markdown(f"**File name:** `{data_file.name}`")
             df = read_data_template(data_file, sheet_name="results", lab=lab)
             stn_df = pd.read_excel(
-                r"./data/active_stations_2020.xlsx", sheet_name="data"
+                r"./data/all_stations_2025-11-13.xlsx", sheet_name="data"
             )
             st.dataframe(df.astype(str))
 
