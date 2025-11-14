@@ -1,5 +1,4 @@
 vannmiljo_code,sample_date,lab,period,depth1,depth2,CA_mg/l,PH_<ubenevnt>,pred
-021-28450,2025-03-17,Eurofins,new,0.0,0.0,5.7,6.7,outlier
 021-28450,2025-03-23,Eurofins,new,0.0,0.0,7.5,6.9,outlier
 022-58904,2025-03-03,Eurofins,new,0.0,0.0,5.7,7.0,outlier
 030-58768,2025-02-17,Eurofins,new,0.0,0.0,4.1,7.2,outlier
@@ -8,6 +7,5 @@ vannmiljo_code,sample_date,lab,period,depth1,depth2,CA_mg/l,PH_<ubenevnt>,pred
 030-58838,2025-01-13,Eurofins,new,0.0,0.0,11.0,6.2,outlier
 030-58838,2025-02-16,Eurofins,new,0.0,0.0,11.0,6.4,outlier
 038-58853,2025-01-27,Eurofins,new,0.0,0.0,3.0,4.9,outlier
-038-88032,2025-01-27,Eurofins,new,0.0,0.0,3.5,5.1,outlier
 061-58800,2025-01-06,Eurofins,new,0.0,0.0,6.1,6.9,outlier
 082-58870,2025-01-27,Eurofins,new,0.0,0.0,4.3,7.6,outlier
